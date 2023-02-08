@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Share&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -6,26 +7,61 @@
 
 /*General style for body*/
 body {
+  font-family: "Poppins", sans-serif;
+  background: conic-gradient(
+    at 125% 50%,
+    #b78cf7,
+    #ff7c94,
+    #ffcf0d,
+    #ff7c94,
+    #b78cf7
+  );
+}
+/*style for wrapper*/
+.wrapper-box {
   height: 100vh;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  background:conic-gradient(at 125% 50%, #b78cf7, #ff7c94, #ffcf0d, #ff7c94, #b78cf7)
-}
-.wrapper-box{
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 20rem;
-  height: 10rem;
-  background-color:rgba(255, 255, 255, 0.6);
   box-shadow: 2px 4px 5px 2px rgb(80, 76, 76);
-  border: 5px solid rgb(13, 12, 12);
-  border-radius: 50px;
-  -webkit-border-radius: 50px;
-  -moz-border-radius: 50px;
-  -ms-border-radius: 50px;
-  -o-border-radius: 50px;
 }
 
+.digital_clock {
+  width: fit-content;
+  background: rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+/* style for digital clock h3*/
+h3 {
+  display: inline-block;
+  margin: 0 0.2rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+
+/* Media query*/
+@media (max-width: 768) {
+  #bar1,
+  #bar2 {
+    display: none;
+  }
+  .digital_clock {
+    text-align: center;
+    width: 100%;
+  }
+  /*
+.digital_clock h3{
+    display: block;
+} */
+}
+
+@media (max-width: 480px) {
+  h3 {
+    font-size: 1rem;
+  }
+}
