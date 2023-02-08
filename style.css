@@ -27,7 +27,7 @@ body {
   box-shadow: 2px 4px 5px 2px rgb(80, 76, 76);
 }
 
-.digital_clock {
+#digitalClock {
   width: fit-content;
   background: rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -35,13 +35,7 @@ body {
   color: white;
   margin: auto;
   text-align: center;
-}
-/* style for digital clock h3*/
-h3 {
-  display: inline-block;
-  margin: 0 0.2rem;
-  font-weight: 600;
-  font-size: 1.5rem;
+  font-size: 2.5rem;
 }
 
 /* Media query*/
@@ -50,7 +44,7 @@ h3 {
   #bar2 {
     display: none;
   }
-  .digital_clock {
+  #digitalClock {
     text-align: center;
     width: 100%;
   }
